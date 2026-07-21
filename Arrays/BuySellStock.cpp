@@ -6,12 +6,32 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 // This is a 'dynamic programming' approach as I am memorizing the previous result. (Greedy Technique)
 
+
+// Time Complexity: O(n) — single pass through the array.
+// Space Complexity: O(1) — constant extra space
+
 //
 
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int mini = prices[0];
+        int profit = 0;
+        int n = prices.size();
+
+        for(int i = 0; i < n; i++){
+            int cost = prices[i] - mini;
+            profit = max(cost, profit);
+            mini = min(mini, prices[i]);
+        }
+        return profit;
+    }
+};
 
 
+// MY BRUTE FORCE 
 
-// MY BRUTE FORCE
+// (slight wrong)
 
 class Solution {
 public:
@@ -36,5 +56,11 @@ public:
     }
 };
 
-
+/*
+The second solution attempts to find the absolute minimum price in the array first, and then looks for the highest selling price 
+after that global minimum:   
+          SO 
+The global minimum is not guaranteed to give you the maximum profit if it appears near the very end of the array or if a much 
+larger price spread occurs earlier.
+*/
 

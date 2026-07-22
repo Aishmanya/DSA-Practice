@@ -28,10 +28,13 @@ public:
             while (i < n && s[i] != ' ') {
                 s[index++] = s[i++];
             }
+
+            /* or  s[index] = s[i];  index++;  i++; */
         }
         
         // Resize string to remove leftover trailing garbage characters
-        s.resize(index);
+        s.resize(index); 
+        //changes the length of the string to index by removing anything outside or after length index.
         
         // Step 2: Reverse the entire cleaned string
         reverse(s.begin(), s.end());

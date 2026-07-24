@@ -15,12 +15,14 @@ public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         unordered_map<string, vector<string>> mp;
 
+        //filling map (by grouping and filtering)
         for(const string&s : strs){
             string key=s;
             sort(key.begin(),key.end());
             mp[key].push_back(s);
         }
 
+        //map ka sare values ko result vector me as vectors add kar rheh like [['bat','tab'],['ate','eat','tea']]
         vector<vector<string>> result;
         for(auto& it:mp){
             result.push_back(it.second);

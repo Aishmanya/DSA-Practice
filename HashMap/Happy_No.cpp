@@ -1,4 +1,4 @@
-// Problem: Happy Number
+// Problem: Happy Number (a no. whose sum of squares of digit after few iterations gives 1)
 // Link: https://leetcode.com/problems/happy-number/
 // Time: O(log n) -> Sum of digits shrinks logarithmically
 // Space: O(log n) -> To store seen numbers in the hash set

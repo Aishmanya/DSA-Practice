@@ -3,7 +3,7 @@
 // Time: O(log n) -> Sum of digits shrinks logarithmically
 // Space: O(log n) -> To store seen numbers in the hash set
 
-// Approach:
+// Approach:-
 // Use a helper function to calculate the sum of squares of digits.
 // Keep track of visited numbers using an unordered_set to detect infinite cycles.
 // If the number reduces to 1, return true. If a repeated number is found in the set, return false.

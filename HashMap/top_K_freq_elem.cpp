@@ -1,4 +1,4 @@
-// Problem: Top K Frequent Elements
+// Problem: Top K Frequent Elements  (array ke top K sabse zyada repeat hone wale elements return karne hain)
 // Link: https://leetcode.com/problems/top-k-frequent-elements/
 // Time: O(n) -> Counting frequencies takes O(n), Bucket Sort takes O(n)
 // Space: O(n) -> Hash map and Buckets take extra space

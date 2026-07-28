@@ -25,7 +25,7 @@ public:
 };
 
 //or
-// node->prev=node->next; delete node
+// node->prev = node->next; delete node
 
 //ye approach won't work in SLL as usme sirfnext ptr hota
 

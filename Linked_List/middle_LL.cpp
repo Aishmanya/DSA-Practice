@@ -8,6 +8,8 @@
 // Slow moves 1 step while Fast moves 2 steps at a time.
 // When Fast reaches the end (or NULL), Slow will be pointing directly at the middle node.
 
+// Floyd’s Cycle-Finding Algorithm (also known as the Tortoise and Hare Algorithm).
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -23,10 +25,11 @@ public:
     ListNode* middleNode(ListNode* head) {
         ListNode* fast=head;
         ListNode* slow=head;
-        while(fast!=NULL && fast->next!=NULL){
+        while(fast!=NULL && fast->next!=NULL){ //maintain this order only as pehle 1st condn check hota in && then proceed karta
             slow = slow->next;
             fast = fast->next->next;
         }
         return slow;
+        //not slow->value coz slow is a pointer pointing to a value only na and also
     }
 };

@@ -1,6 +1,8 @@
-// Linked List cycle   - Cycle tab hoti hai jab list ki koi node aage chal kar kisi purani node se wapas connect ho jaye, 
+// Linked List cycle   
+// => Cycle tab hoti hai jab list ki koi node aage chal kar kisi purani node se wapas connect ho jaye, 
 // jisse list ka ending node NULL par pahunchne ke bajaye infinite loop mein chala jaye.
-// ~~ NOT necessary ki head ko he point kare !
+// ~~~~~~ NOT necessary ki head ko he point kare ! ~~~~~~
+
 
 // Problem: Linked List Cycle
 // Link: https://leetcode.com/problems/linked-list-cycle/
@@ -12,6 +14,7 @@
 // Move 'slow' by 1 step and 'fast' by 2 steps.
 // If there is a cycle, 'fast' will eventually catch up and meet 'slow'.
 // If 'fast' reaches NULL or fast->next becomes NULL, no cycle exists.
+
 
 /**
  * Definition for singly-linked list.

@@ -20,7 +20,7 @@ public:
             } 
             // Handle closing brackets
             else {
-                // If stack is empty, there's no matching open bracket
+                // If stack is empty, there's no matching open bracket 
                 if (st.empty()) return false;
 
                 char topChar = st.top();

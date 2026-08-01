@@ -19,7 +19,7 @@ public:
         // Link current node to next-to-next node
         node->next = node->next->next;
         
-        // Free allocated memory
+        // Free allocated memory.
         delete temp;
     }
 };

@@ -34,7 +34,7 @@ public:
             }
         }
 
-        // Valid only if all opened brackets were properly closed
+        // Valid only if all opened brackets were properly closed.
         return st.empty();
     }
 };

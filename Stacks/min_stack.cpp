@@ -45,7 +45,7 @@ public:
 };
 
 /**
- * Your MinStack object will be instantiated and called as such:
+ * Your MinStack object will be instantiated and called as such:-
  * MinStack* obj = new MinStack();
  * obj->push(val);
  * obj->pop();

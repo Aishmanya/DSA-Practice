@@ -1,7 +1,7 @@
 // Problem: Group Anagrams
 // Link: https://leetcode.com/problems/group-anagrams/
 // Time: O(N * K log K) -> N is number of strings, K is maximum length of a string
-// Space: O(N * K) -> To store strings inside the hash map
+// Space: O(N * K) -> To store strings inside the hash map.
 
 // Approach:
 // Anagrams yield the exact same string when sorted.

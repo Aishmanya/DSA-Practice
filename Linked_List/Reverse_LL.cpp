@@ -3,7 +3,7 @@
 // Time: O(n)
 // Space: O(1)
 
-// Approach:
+// Approach:-
 // Maintain three pointers: prev (NULL), curr (head), and next.
 // Iteratively break the forward link and point curr->next back to prev.
 // Advance prev and curr until curr becomes NULL. Return prev as the new head.

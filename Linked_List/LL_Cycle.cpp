@@ -28,7 +28,7 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
 
-        //checking base case for empty node or single node
+        // checking base case for empty node or single node
         if (head == nullptr || head->next == nullptr) {
             return false;
         }

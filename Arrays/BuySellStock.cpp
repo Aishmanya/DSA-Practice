@@ -10,7 +10,9 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 // Time Complexity: O(n) — single pass through the array.
 // Space Complexity: O(1) — constant extra space
 
-//
+#include <iostream>
+
+using namespace std;
 
 class Solution {
 public:

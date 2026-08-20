@@ -1,4 +1,4 @@
-// Problem: Remove Duplicates from Sorted Array
+// Problem: Remove Duplicates from Sorted Array and Return the Unique Count
 // Link: [https://leetcode.com/problems/remove-duplicates-from-sorted-array/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 // Time: O(n)
 // Space: O(1)
@@ -22,6 +22,6 @@ public:
                 i++;
             }
         }
-        return i + 1;
+        return i + 1; //Return the Unique Count
     }
 };
